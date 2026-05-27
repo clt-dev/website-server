@@ -17,7 +17,7 @@ class EmailUtils {
     static async sendInquiryEmail(inquiry) {
         const inquiryEmail = {
             from: 'CLT Dev Inquiry <noreply@cltdev.com>',
-            to: 'kylebebeau@gmail.com',
+            to: ['kyle@cltdev.com', 'sean@cltdev.com'],
             subject: 'New Project Inquiry',
             template: 'inquiry',
             context: { 
